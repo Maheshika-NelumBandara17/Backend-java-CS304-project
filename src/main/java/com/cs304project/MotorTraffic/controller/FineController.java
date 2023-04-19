@@ -13,7 +13,7 @@ public class FineController {
     @Autowired
     private FineService fineService;
 
-    @PostMapping("user/addfine")
+    @PostMapping("/addfine")
     public String add(@RequestBody Fine fine) {
         fineService.saveFine(fine);
         return "new fine added";

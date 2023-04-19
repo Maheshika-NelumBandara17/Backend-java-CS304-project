@@ -11,8 +11,8 @@ import jakarta.persistence.*;
         private int id;
         private String nic_num;
         private String phone;
+        private String lastName;
         private String district;
-        private String firstName;
 
 
         @Lob
@@ -21,11 +21,12 @@ import jakarta.persistence.*;
         public Complain() {
         }
 
-        public Complain(String nic_num, String phone, String district, String firstName, String video) {
+        public Complain(String nic_num, String phone, String district, String lastName, String video) {
             this.nic_num = nic_num;
+            this.lastName=lastName;
             this.phone = phone;
             this.district = district;
-            this.firstName = firstName;
+
             this.video = video;
         }
 
@@ -57,12 +58,12 @@ import jakarta.persistence.*;
             this.district = district;
         }
 
-        public String getFirstName() {
-            return firstName;
+        public String getLastName() {
+            return lastName;
         }
 
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
+        public void setLastName(String lastName) {
+            this.lastName = this.lastName;
         }
 
         public String getVideo() {

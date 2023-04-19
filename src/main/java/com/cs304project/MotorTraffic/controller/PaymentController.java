@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.*;
 //@RequestMapping("/api/v2/open")
 @CrossOrigin
 public class PaymentController {
+
+
     @Autowired
     private PaymentService paymentService;
 
-    @PostMapping("user/addpayment")
+    @PostMapping("/addpayment")
     public String add(@RequestBody Payment payment) {
         paymentService.savePayment(payment);
         return "new payment added";

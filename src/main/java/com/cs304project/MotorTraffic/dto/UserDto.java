@@ -1,6 +1,15 @@
 package com.cs304project.MotorTraffic.dto;
 
 public class UserDto {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
     private String firstName;
     private String lastName;
     private String nic;
@@ -59,18 +68,6 @@ public class UserDto {
         this.role = role;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
     public void setAddress(String address) {
         this.address = address;
     }
@@ -82,4 +79,16 @@ public class UserDto {
     public void setEmail(String email) {
         this.email = email;
     }
-}
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+        }

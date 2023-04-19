@@ -10,4 +10,7 @@ public interface UserRepository extends JpaRepository<Users,Integer> {
     Optional<Users> findByNic(String username);
 
 
+
+
+    Users getUserByNic(String nic);
 }

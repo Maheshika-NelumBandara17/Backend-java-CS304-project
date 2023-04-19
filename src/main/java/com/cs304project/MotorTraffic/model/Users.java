@@ -22,8 +22,11 @@ public class Users {
     private String address;
     private String email;
 
+
     public Users() {
     }
+
+
 
     public Users(String firstName, String lastName, String nic, String district, String password, String role, String phone, String address, String email) {
         this.firstName = firstName;
@@ -35,6 +38,8 @@ public class Users {
         this.phone = phone;
         this.address = address;
         this.email = email;
+
+
     }
 
     public int getId() {
@@ -65,7 +70,7 @@ public class Users {
         return nic;
     }
 
-    public void setNic_num(String nic) {
+    public void setNic(String nic) {
         this.nic = nic;
     }
 
@@ -116,4 +121,7 @@ public class Users {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
+
